@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Popup Page</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,57 +15,26 @@
             margin: 0;
         }
 
-        .login-container {
+        .popup-container {
             background: white;
             padding: 2rem;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-
-        .login-container h1 {
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-        }
-
-        .login-container input {
-            width: 100%;
-            padding: 0.75rem;
-            margin: 0.5rem 0;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        .login-container button {
-            background-color: #007bff;
-            color: white;
-            padding: 0.75rem 1rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-        }
-
-        .login-container button:hover {
-            background-color: #0056b3;
-        }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <form onsubmit="showPopup(event)">
-            <input type="text" id="username" placeholder="Username" required>
-            <input type="password" id="password" placeholder="Password" required>
-            <button type="submit">Login</button>
-        </form>
+    <div class="popup-container">
+        <h1>Welcome to the Popup Page</h1>
     </div>
 
     <script>
-        function showPopup(event) {
-            event.preventDefault(); // Prevent the form from submitting
+        window.onload = function() {
             alert("You’re hacked! 😈");
-        }
+        };
     </script>
 </body>
 </html>
+
+  
